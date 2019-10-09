@@ -1,0 +1,28 @@
+<% include partials/header %>
+<script>
+    function pop(element) {
+        var popup = element.childNodes[1];
+        popup.classList.toggle("hide");
+        popup.classList.toggle("show");
+
+    }
+</script>
+
+<h1>Teigi</h1>
+<p>Simply hover over or tap any word to see it's definition.</p>
+<section id="result">
+    <% dict.forEach(function(def, index) { %>
+    <% if(def.definition) { %>
+    <p class="popup" onmouseover="pop(this)" onmouseout="pop(this)">
+        <%= def.word %>
+        <span class="popuptext hide"> <%= def.definition %></span>
+    </p>
+    <% } else { %>
+    <p>
+        <%= def.word %>
+    </p>
+    <% } %>
+    <% }) %>
+</section>
+
+<% include partials/footer %>

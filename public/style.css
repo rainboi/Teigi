@@ -1,0 +1,95 @@
+html, body {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    font-size: calc(100vw / 105 + 100vh / 105);
+}
+
+footer {
+    font-weight: 800;
+    bottom: 0;
+    width: 100%;
+    padding: 1% 0;
+}
+
+textarea {
+    border: 1px solid black;
+    font-family: 'Roboto', sans-serif;
+    display: block;
+    width: 90%;
+    height: 50vh;
+    margin: 0 auto;
+}
+
+form {
+    width: 100%;
+    text-align: center;
+}
+
+form input[type="submit"] {
+    margin: 2% 0;
+}
+
+#result {
+    height: 100%;
+    border: 1px solid black;
+    text-align: start;
+    margin: 6% 14% 1% 14%;
+    padding: 2%;
+}
+
+#result p {
+    display: inline-block;
+    margin-top: 0.1rem;
+    margin-bottom: 0.1rem;
+}
+
+/* Popup container */
+.popup {
+    position: relative;
+    cursor: pointer;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+    font-size: 0.8rem;
+    visibility: hidden;
+    width: 12rem;
+    height: auto;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 0.5rem;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -6.5rem;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+  
+  /* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+    visibility: visible;
+    opacity: 1;
+    /* transition: opacity 0.5s linear; */
+}
+
+.popup .hide {
+    visibility: hidden;
+    opacity: 0;
+    /* transition: visibility 0s 0.5s, opacity 0.5s linear; */
+}
