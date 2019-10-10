@@ -2,9 +2,13 @@
 <h1>Welcome to Teigi</h1>
 <p>Teigi's purpose is to help people who can/want to read in English, but don't have a big enough vocabulary.</p>
 <p>Therefore, Teigi provides English definitions from dictionary for every word.</p>
-<p>Just enter text in the box below and click <strong>"GO!"</strong></p>
+<p>Just pick a dictionary, enter the text in the box below and click <strong>"GO!"</strong></p>
 <form action="/result" method="POST">
     <textarea name="text"></textarea>
+    <select name="dictionary">
+        <option value="Cambridge">Cambridge</option>
+        <option value="GTrans">Google Translate</option>
+    </select>
     <button>GO!</button>
 </form>
 
