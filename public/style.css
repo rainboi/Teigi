@@ -27,7 +27,7 @@ form {
     text-align: center;
 }
 
-form input[type="submit"] {
+form button {
     margin: 1% 0;
 }
 
